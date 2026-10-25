@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Rahul & Ananya — React Wedding Invitation
+# Rahul & Sruthi — React Wedding Invitation
 
 A responsive, animated wedding invitation built with React + Vite. Features a split-curtain opening, scroll reveal, couple story, wedding details, 12-image gallery with lightbox, venue/map links, optional background music, and mobile navigation.
 
