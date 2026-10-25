@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rahul & Ananya — React Wedding Invitation
 
 A responsive, animated wedding invitation built with React + Vite. Features a split-curtain opening, scroll reveal, couple story, wedding details, 12-image gallery with lightbox, venue/map links, optional background music, and mobile navigation.
@@ -37,3 +38,7 @@ At the top of `src/main.jsx`, edit the `wedding` object. The current date and na
 npm run build
 ```
 The production site is generated in `dist/` and can be deployed to Vercel, Netlify, or any static hosting provider.
+=======
+# wedding-invitation
+Premium digital wedding invitation website
+>>>>>>> e775a755cf800d21c2d1ded6bade1a3329dff617
