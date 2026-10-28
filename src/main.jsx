@@ -28,7 +28,7 @@ const FRAME_URL = (number) =>
 
 const photos = Array.from(
   { length: 16 },
-  (_, i) => `/images/img${i + 1}.jpg`
+  (_, i) => `${import.meta.env.BASE_URL}images/img${i + 1}.jpg`
 );
 
 const wedding = {
