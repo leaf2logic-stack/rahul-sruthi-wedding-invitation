@@ -24,7 +24,7 @@ gsap.registerPlugin(ScrollTrigger);
 const FRAME_COUNT = 155;
 
 const FRAME_URL = (number) =>
-  `/wedding-frames/ezgif-frame-${String(number).padStart(3, '0')}.png`;
+  `${import.meta.env.BASE_URL}wedding-frames/ezgif-frame-${String(number).padStart(3, '0')}.png`
 
 const photos = Array.from(
   { length: 16 },
@@ -75,7 +75,6 @@ function App() {
     return () => window.clearInterval(intervalId);
   }, []);
 
-  const audioRef = useRef(null);
   const heroRef = useRef(null);
 
   // Cinematic finale refs
@@ -415,21 +414,6 @@ function App() {
     }, 1150);
   };
 
-  const toggleMusic = async () => {
-    if (!audioRef.current) return;
-
-    if (muted) {
-      try {
-        await audioRef.current.play();
-        setMuted(false);
-      } catch {
-        setMuted(true);
-      }
-    } else {
-      audioRef.current.pause();
-      setMuted(true);
-    }
-  };
 
   const goTo = (id) => {
     setMenuOpen(false);
@@ -442,11 +426,7 @@ function App() {
 
   return (
     <>
-      <audio
-        ref={audioRef}
-        loop
-        src="/music/soft-wedding-music.mp3"
-      />
+      
 
       {/* Opening invitation curtain */}
       <div
